@@ -46,7 +46,7 @@ RUN aria2c "https://www.open3a.de/download/open3A 3.4.zip" -d /tmp -o open3A.zip
     && chmod 777 /var/www/html/system/DBData/Installation.pfdb.php
 
 # Expose the port nginx is reachable on
-EXPOSE 8080
+EXPOSE 80
 
 # Let supervisord start nginx & php-fpm
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
