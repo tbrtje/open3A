@@ -35,7 +35,7 @@ WORKDIR /var/www/html
 #COPY --chown=nobody src/ /var/www/html/
 
 # Download the comporessed app
-RUN aria2c "https://www.open3a.de/download/open3A 3.3.zip" -d /tmp -o open3A.zip \
+RUN aria2c "https://www.open3a.de/download/open3A 3.4.zip" -d /tmp -o open3A.zip \
 # unzip the app into workfolder
     && unzip /tmp/open3A.zip -d /var/www/html \
 # set proper accessrights and create nedded folder
